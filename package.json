@@ -2,7 +2,7 @@
   "name": "parcialMCGA2021",
   "version": "1.0.0",
   "description": "",
-  "main": "../parcialMCGA2021/api/index.js",
+  "main": "../api/index.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
