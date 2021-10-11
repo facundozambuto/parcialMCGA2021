@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "7d788fd5-15ec-42bc-9b6c-b614641d8a15",
+		"name": "ParcialMCGA2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "[POST] Add new Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Facundo\",\r\n    \"lastName\": \"Zambuto\",\r\n    \"title\": \"Mr\",\r\n    \"dateOfBirth\": \"1991-07-25T00:00:00.000Z\",\r\n    \"email\": \"facundozambuto2@gmail.com\",\r\n    \"gender\": \"Male\",\r\n    \"deparment\": \"Research and Development\",\r\n    \"city\": \"Rosario\",\r\n    \"country\": \"Argentina\",\r\n    \"jobTitle\": \"Developer\",\r\n    \"phone\": \"3416201040\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mcga-parcial2021-api.herokuapp.com/employees/",
+							"protocol": "https",
+							"host": [
+								"mcga-parcial2021-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"employees",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[GET] Get All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mcga-parcial2021-api.herokuapp.com/employees/",
+							"protocol": "https",
+							"host": [
+								"mcga-parcial2021-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"employees",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[GET] Get Employee by EmployeeID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mcga-parcial2021-api.herokuapp.com/employees/6163a8b6671fe8d1440a532e",
+							"protocol": "https",
+							"host": [
+								"mcga-parcial2021-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"employees",
+								"6163a8b6671fe8d1440a532e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[PUT] Update Employee by EmployeeID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Facundo\",\r\n    \"lastName\": \"Zambuto\",\r\n    \"title\": \"Mr\",\r\n    \"dateOfBirth\": \"1991-07-25T00:00:00.000Z\",\r\n    \"email\": \"cpowlesland0@macromedia.com\",\r\n    \"gender\": \"Male\",\r\n    \"deparment\": \"Technology\",\r\n    \"city\": \"Rio de Janeiro\",\r\n    \"country\": \"Brazil\",\r\n    \"jobTitle\": \"IT Support\",\r\n    \"phone\": \"3416201040\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mcga-parcial2021-api.herokuapp.com/employees/6163a8b6671fe8d1440a532e",
+							"protocol": "https",
+							"host": [
+								"mcga-parcial2021-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"employees",
+								"6163a8b6671fe8d1440a532e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[DELETE] Delete Employee by EmployeeID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://mcga-parcial2021-api.herokuapp.com/employees/6163a5ed37f9098ee8c47b54",
+							"protocol": "https",
+							"host": [
+								"mcga-parcial2021-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"employees",
+								"6163a5ed37f9098ee8c47b54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[ROOT]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mcga-parcial2021-api.herokuapp.com",
+							"protocol": "https",
+							"host": [
+								"mcga-parcial2021-api",
+								"herokuapp",
+								"com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -79,7 +79,7 @@ employeeMethods.updateEmployee = async (req , res) => {
         
         const foundEmployee = await employeeModel.findOne({email: email});
 
-        if (foundEmployee && foundEmployee.id === employeeId) {
+        if (!foundEmployee || foundEmployee.id === employeeId) {
             const updatedEmployee = await employeeModel.findOne({_id: ObjectId(employeeId)}).updateOne({$set: { firstName, lastName, title, dateOfBirth, email, gender, deparment, city, country, jobTitle, phone, updatedDatetime}});
 
             res.status(200).send(res.json({
