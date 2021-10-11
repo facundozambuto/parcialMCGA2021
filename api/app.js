@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(helmet());
 
-app.use(function(req, res){
+app.get('/', function(req, res){
     res.send('Servidor OK.');
 });
 app.use('/employees', require('./routes/employee.route'));

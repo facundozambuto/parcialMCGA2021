@@ -2,7 +2,7 @@
   "name": "parcialMCGA2021",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "../parcialMCGA2021/api/index.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -16,7 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "serve": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node ./api/index.js"
   },
   "repository": {
     "type": "git",
